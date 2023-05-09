@@ -1,5 +1,3 @@
-import { EnergyType } from '../Energy';
-
 abstract class Archetype {
   private _name: string;
   private _special: number;
@@ -15,9 +13,9 @@ abstract class Archetype {
   get special() { return this._special; }
   get cost() { return this._cost; }
 
-  abstract get energyType(): EnergyType;
+  abstract get energyType(): string;
 
-  static createdRacesInstances(): number {
+  static createdArchetypeInstances(): number {
     throw new Error('Not implemented');
   }
 }
