@@ -8,7 +8,7 @@ interface Fighter {
 
   attack(enemy: Fighter): void;
   special(enemy: Fighter): void;
-  receiveDamage(amount: number): number;
+  receiveDamage(amount: number): number | undefined;
   levelUp(): void;
 }
 
